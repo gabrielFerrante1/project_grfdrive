@@ -1,0 +1,112 @@
+@import "../../../styles/variables.scss";
+
+.content {
+    height: $pagenavbar_hegiht;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    min-width: $min_width_layout_content;
+    border-bottom: 1px solid rgb(236, 234, 234);
+}
+
+.titlePage {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    padding: 0 15px;
+    overflow-x: auto;
+    font-size: 21px;
+    color: rgb(100, 99, 99);
+}
+
+.pathStorage {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    padding: 0 15px;
+    overflow-x: auto;
+    width: fit-content;
+}
+
+.pathStorage::-webkit-scrollbar {
+    height: 4px;
+}
+
+.pathStorage::-webkit-scrollbar-track {
+    background: white;
+}
+
+.pathStorage::-webkit-scrollbar-thumb {
+    background: rgba(112, 111, 111, 0.507);
+}
+
+.pathStorage::-webkit-scrollbar-thumb:hover {
+    background: rgb(116, 116, 116);
+}
+
+.directory {
+    display: flex;
+    align-items: center;
+    min-width: fit-content;
+}
+
+.labelStorage {
+    font-size: 17px;
+    color: rgb(112, 112, 112) !important;
+    font-weight: 400;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.labelStorage:hover {
+    background-color: rgba(151, 151, 151, 0.212);
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+.labelStorageActive {
+    @extend .labelStorage;
+    color: rgb(24, 24, 24) !important;
+    cursor: default;
+}
+
+.labelStorageActive:hover {
+    padding: 0;
+    background-color: transparent;
+}
+
+.iconArrowForward {
+    margin: 1px 10px 0px 5px;
+    font-size: 20px;
+    color: rgba(107, 107, 107, 0.726);
+}
+
+.actionsStorage {
+    margin: 0 1% 0 2%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.iconContent {
+    border-radius: 50%;
+    transition: all 0.2s;
+    padding: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    & .icon {
+        color: rgba(87, 86, 86, 0.808);
+        font-size: 24px;
+    }
+}
+
+.iconContent:hover {
+    background-color: rgba(194, 193, 193, 0.486);
+}
+.iconSecurity {
+    font-size: 21px !important;
+}

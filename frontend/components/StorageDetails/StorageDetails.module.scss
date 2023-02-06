@@ -1,0 +1,98 @@
+#header {
+    border-bottom: 1px solid rgb(209, 209, 209);
+    white-space: nowrap;
+    width: 100%;
+}
+
+#body {
+    white-space: nowrap;
+    width: 100%;
+    padding: 5px 10px;
+    height: 80vh;
+    overflow: auto;
+}
+
+/* width */
+#body::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+#body::-webkit-scrollbar-track {
+    background: #e9e7e7;
+}
+
+/* Handle */
+#body::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+#body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.headerInfo {
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerNameStorage {
+    color: rgb(61, 60, 60);
+    font-size: 17px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 220px;
+}
+
+.headerCloseIconStorageDetails {
+    color: rgb(110, 110, 110);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.headerCloseIconStorageDetails:hover {
+    color: rgb(0, 132, 255);
+}
+
+.headerTabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: -1px;
+
+    .headerTabsTab {
+        cursor: pointer;
+        font-weight: 500;
+        padding: 4px 0;
+        text-align: center;
+        min-width: 50%;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s;
+    }
+
+    .headerTabsTabActive {
+        border-bottom-color: rgb(0, 68, 255);
+    }
+}
+
+.detailItem {
+    margin-bottom: 10px;
+
+    small {
+        font-weight: 500;
+        font-size: 15px;
+        color: rgb(109, 109, 109);
+    }
+
+    p {
+        font-size: 14.5px;
+    }
+}
+
+.modificationItem {
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(226, 225, 225);
+}

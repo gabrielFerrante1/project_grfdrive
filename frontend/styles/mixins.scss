@@ -1,0 +1,7 @@
+@import "variables.scss";
+
+@mixin pageScroll {
+    //background-color: rgb(240, 240, 240);
+    height: calc(100vh - calc($navbar_hegiht + $pagenavbar_hegiht));
+    overflow: auto;
+}
