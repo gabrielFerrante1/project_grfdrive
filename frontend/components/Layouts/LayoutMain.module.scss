@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+#app {
+    min-width: $min_width_layout_content;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+
+#appPage {
+    display: flex;
+}
+
+#appPageSidebar {
+    background-color: white;
+    min-width: 240px;
+    overflow-x: hidden;
+}
+
+#appPageContent {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#page {
+    width: 100%;
+
+}
+
+#storageDetails { 
+    border-left: 1px solid rgb(218, 217, 217);
+    transition: all 0.4s; 
+}

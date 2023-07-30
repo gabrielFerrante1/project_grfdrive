@@ -1,0 +1,40 @@
+#auth {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(223, 233, 245, 0.877);
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid rgb(90, 88, 88);
+    border-radius: 5px;
+    min-width: 20%;
+
+    header {
+        display: flex;
+        border-bottom: 1px solid rgb(185, 199, 206);
+        padding: 7px 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+
+        margin: 9px 10px;
+    }
+
+    footer {
+        display: flex;
+        border-top: 1px solid rgb(197, 197, 197);
+        padding: 10px 15px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.cardTitle {
+    font-size: 17px;
+    font-weight: 600;
+}

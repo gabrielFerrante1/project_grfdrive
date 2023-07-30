@@ -1,0 +1,90 @@
+.headerEditorOptions {
+    background-color: rgba(247, 247, 247, 0.842);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    display: flex;
+    gap: 17px;
+    padding: 0 28px;
+    height: 45px;
+    align-items: center;
+}
+
+.headerOptionsIcon {
+    color: rgb(92, 92, 92);
+    font-size: 22px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+    transition: all .1s;
+}
+
+.headerOptionsSaveIcon {
+    color: rgb(48, 118, 250);
+}
+
+.headerOptionsSaveIconDisabled {
+    color: rgba(80, 80, 80, 0.644);
+    pointer-events: none;
+}
+
+.headerOptionsIconActive {
+    background-color: rgba(213, 231, 247, 0.699);
+    color: blue;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.headerOptionsDivider {
+    border-left: 0.1px solid rgba(194, 194, 194, 0.87);
+    height: 70%;
+}
+
+.headerOptionsZoomSelect {
+    margin-left: 10px;
+    margin-right: -5px;
+}
+
+
+.onlineEditors {
+    background-color: rgba(247, 247, 247, 0.788);
+    border-top: 1px solid rgb(218, 218, 218);
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px; 
+    gap: 17px
+}
+
+.editorPopoverHeader {
+    display: flex;
+    gap: 8px;
+}
+
+.editorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.editorOption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(251, 251, 251, 0.938);
+    padding: 11px 15px;
+    cursor: pointer;
+}
+
+.editorOption:hover {
+    background-color: rgba(243, 247, 250, 0.993);
+    color: rgb(1, 82, 231);
+}
+
+.editorOptionIcon {
+    font-size: 20px;
+}
+
+.editorOptionTitle {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: -2px;
+}

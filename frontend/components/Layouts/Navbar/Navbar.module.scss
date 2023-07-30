@@ -1,0 +1,40 @@
+@import "../../../styles/variables.scss";
+
+#navBar {
+    display: flex;
+    height: $navbar_hegiht;
+    border-bottom: 1px solid rgb(216, 216, 216);
+
+    nav {
+        margin-left: 60px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.logo {
+    width: 213px;
+    height: 100%;
+    background-image: url('../../../public/assets/logo.png');
+    background-repeat: no-repeat;
+    background-position: 35px -30px;
+    background-size: 145px 130px;
+    cursor: pointer;
+}
+
+.searchInputContent {
+    flex: 1;
+}
+
+.userContent {
+    margin-right: 30px;
+}
+
+@media (max-width:900px) {
+    #navBar {
+        nav {
+            margin-left: 10px;
+        }
+    }
+}

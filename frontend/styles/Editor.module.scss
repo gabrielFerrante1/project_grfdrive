@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+.editorBody {
+    height: calc(100vh - $navbar_hegiht - 88px);
+    background-color: #eff2f3e0;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0; 
+}
+
+
+.editorPage {
+    height: 770px;
+    width: 950px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(196, 196, 196);
+    user-select: text;
+    outline: none;
+    box-shadow: none;
+    overflow: auto;
+}
+
+.editorPage::-webkit-scrollbar {
+    width: 0px;
+}
+
+.editorBody::-webkit-scrollbar {
+    width: 2px;
+}
+ 
+.kickedEditingRoom {
+    height:  80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

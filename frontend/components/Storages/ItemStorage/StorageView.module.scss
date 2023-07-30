@@ -1,0 +1,94 @@
+$item_color_active: rgb(47, 113, 255);
+
+.item {
+    display: flex;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    align-items: center;
+}
+
+.itemName {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    flex: 3;
+
+    & span {
+        color: rgba(94, 93, 93, 0.952);
+        font-size: 14.5px;
+    }
+}
+
+.itemIcon {
+    margin-right: 1%;
+
+    .icon {
+        font-size: 20px;
+        color: rgba(70, 70, 70, 0.795);
+    }
+}
+
+.itemOwner {
+    flex: 1;
+
+    & span {
+        color: rgba(94, 93, 93, 0.952);
+        font-size: 15px;
+    }
+}
+
+.itemType {
+    flex: 1;
+
+
+    & span {
+        color: rgba(94, 93, 93, 0.952);
+        font-size: 14px;
+    }
+}
+
+.itemSize {
+    flex: 0.2;
+
+    & span {
+        color: rgba(94, 93, 93, 0.952);
+        font-size: 13.5px;
+    }
+}
+
+.renameStorage {
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(145, 145, 145);
+    padding: 3px 10px; 
+}
+
+.itemEffectHover:hover {
+    background-color: rgba(236, 233, 233, 0.733);
+}
+
+.itemActive {
+    background-color: lighten($color: rgb(19, 78, 241), $amount: 43);
+    border-color: transparent;
+}
+
+.itemActive .icon {
+    color: $item_color_active;
+}
+
+.itemActive .itemOwner>span {
+    color: $item_color_active;
+}
+
+.itemActive .itemName>span {
+    color: $item_color_active;
+}
+
+.itemActive .itemType>span {
+    color: $item_color_active;
+}
+
+.itemActive .itemSize>span {
+    color: $item_color_active;
+}
